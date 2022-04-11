@@ -22,21 +22,11 @@ body {
 .header {
   line-height: 80px;
   width: 100%;
-  -webkit-transition: line-height 0.2s linear, -webkit-box-shadow 0.2s linear;
-  transition: line-height 0.2s linear, -webkit-box-shadow 0.2s linear;
-  transition: line-height 0.2s linear, box-shadow 0.2s linear;
-  transition: line-height 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background: rgba(245, 245, 245, 0.97);
-}
-
-.header.small {
-  line-height: 50px;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
-          box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
 }
 
 ul.nav {
@@ -64,12 +54,8 @@ ul.nav li:hover a {
 ul.nav li a {
   padding: 21px;
   color: initial;
-  text-decoration: initial;
 }
 
-/*
-  Slider
-*/
 .section .slider,
 .section .footer {
   background: #333;
@@ -95,16 +81,6 @@ h2.hero {
   margin-bottom: 60px;
 }
 
-h1.hero:after {
-  content: "";
-  width: 300px;
-  position: relative;
-  border-bottom: 1px solid #aaa;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
-}
-
 .col {
   float: left;
   padding: 0;
@@ -126,11 +102,6 @@ h1.hero:after {
   width: 40%;
   margin: 0 2.5%;
   padding: 0 2.5%;
-}
-
-.col.extrapad {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .col .service,
@@ -173,38 +144,6 @@ h1.hero:after {
   transition: background 0.25s linear, color 0.25s linear;
 }
 
-.col .icon.side {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  top: -15px;
-  height: 50px;
-  width: 50px;
-}
-
-.col:hover > .icon {
-  background: #F44336;
-  color: white;
-}
-
-.col:hover > .icon.side {
-  background: initial;
-  color: initial;
-}
-
-.responsivegroup {
-  display: none;
-}
-
-/*
-  Column specifics
-*/
-.col p,
-.col h1 {
-  padding: 0 1%;
-  text-align: center;
-}
-
 .group.margin {
   margin-bottom: 20px;
 }
@@ -233,9 +172,6 @@ h1.hero:after {
   font-size: 20px;
 }
 
-/*
-  Text
-*/
 .container > h1:not(.hero) {
   margin-bottom: 30px;
   text-align: center;
@@ -259,23 +195,6 @@ h2 {
   font-size: 18px;
 }
 
-.left,
-.left > h1,
-.left > p {
-  text-align: left;
-}
-
-.reset {
-  text-align: left !important;
-}
-
-.reset:after {
-  display: none !important;
-}
-
-/* 
-  Slider with Content
-*/
 .white h1,
 .white h2,
 .white p,
@@ -284,9 +203,6 @@ h2 {
   color: #f7f7f7;
 }
 
-/*
-  Responsive
-*/
 .group:after {
   content: "";
   display: table;
@@ -311,14 +227,6 @@ h2 {
   .header {
     height: auto;
     background: #eee;
-  }
-  #logo {
-    position: initial;
-    float: none;
-    display: block;
-    -webkit-transform: none;
-            transform: none;
-    margin: 10px auto 0 auto;
   }
   ul.nav {
     float: none;
