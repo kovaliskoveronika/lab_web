@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/reg.css">
+</head>
+<body>
+<main class="reg-wrapper">
+
+    <form class="reg-form">
+        <h1 class="title">Registration</h1>
+
+        <label for="nickname" class="label">Nickname
+            <input id="nickname" type="text" class="input">
+        </label>
+
+        <label for="name" class="label">Name
+            <input id="name" type="text" class="input">
+        </label>
+
+        <label for="surname" class="label">Surname
+            <input id="surname" type="text" class="input">
+        </label>
+
+        <label for="email" class="label">Email
+            <input id="email" type="email" class="input">
+        </label>
+
+        <label for="password" class="label">Password
+            <input id="password" type="password" class="input" data-type="password">
+        </label>
+
+        <button type="submit" class="btn reg-btn">Registration</button>
+        <p class="additional">Do not have an account <a href="login.html">Login</a></p>
+    </form>
+
+</main>
+
+<script type="module" src="./scripts/reg.js"></script>
+</body>
+</html>
